@@ -1,17 +1,16 @@
 <?php
 
-// Get values from form. 
-$values = empty($_POST['text']) ? '': $_POST['text'];
+// Get values from form.
+$values = empty($_POST['text']) ? '' : $_POST['text'];
 // Count number of words.
 $count = str_word_count($values);
 
 // Add our usernames to array.
 // For loop.
-for($b=0;$b<$count;$b++) {
-	$usernames = explode(";",$values);
+for ($b = 0; $b < $count; $b++) {
+    $usernames = explode(';', $values);
 }
 // For loop end.
-
 
 ?>
 
